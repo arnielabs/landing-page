@@ -85,7 +85,7 @@ export default function Header() {
           <NavbarMenuItem>
             <Link
               className="w-full dark text-inherit text-3xl"
-              href="#"
+              href="/blog"
               size="lg"
             >
               Blog
@@ -95,7 +95,7 @@ export default function Header() {
           <NavbarMenuItem>
             <Link
               className="w-full dark text-inherit  py-2 text-3xl"
-              href="#"
+              href="/faq"
               size="lg"
             >
               Faq
@@ -105,7 +105,7 @@ export default function Header() {
           <NavbarMenuItem>
             <Link
               className="w-full dark text-inherit  py-2 text-3xl"
-              href="#"
+              href="/about"
               size="lg"
             >
               About Us
