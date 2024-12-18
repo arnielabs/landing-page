@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen bg-zinc-800`}>
+      <body className={`${inter.className} min-h-screen dark text-foreground bg-background`}>
       <NextUIProvider>
       <Header />
         {children}

@@ -7,9 +7,9 @@ export default function Faq() {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   return (
-    <main className="dark flex flex-col items-start justify-start p-20 max-w-screen-xl mx-auto text-gray-200">
-      <h2 className="text-6xl p-2 py-10"> FAQs </h2>
-      <p className="mb-6 text-lg font-normal text-gray-400 p-2">
+    <main className="flex flex-col items-start justify-start p-20 max-w-screen-xl mx-auto text-foreground">
+      <h2 className="text-6xl p-2 py-10 text-foreground"> FAQs </h2>
+      <p className="mb-6 text-lg font-normal p-2">
         Here at Arnie Labs, we focus on markets where technology, innovation, and
         capital can unlock long-term value and drive economic growth.
       </p>

@@ -30,17 +30,17 @@ export default function Header() {
     <Navbar
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      className="dark"
+      // className="bg-background"
       isBlurred={true}
       position="sticky"
       maxWidth="xl"
       // disableAnimation={true}
     >
       <NavbarContent className="sm:hidden pr-3" justify="center">
-        <Link href="/" className="text-inherit">
+        <Link href="/" className="text-foreground">
         <NavbarBrand>
           <AcmeLogo />
-          <p className="font-bold text-inherit">Arnie</p>
+          <p className="font-bold text-foreground">Arnie</p>
         </NavbarBrand>
         </Link>
       </NavbarContent>
@@ -48,25 +48,25 @@ export default function Header() {
       <NavbarContent className="hidden sm:flex gap-4">
         <NavbarBrand>
           <AcmeLogo />
-          <Link href="/" className="text-inherit">
-          <p className="font-bold text-inherit">Arnie</p>
+          <Link href="/" className="text-foreground">
+          <p className="font-bold text-foreground">Arnie</p>
           </Link>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link href="/blog" className="text-inherit p-2 m-2">
+          <Link href="/blog" className="text-foreground p-2 m-2">
             Blog
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/faq" aria-current="page" className="text-inherit p-2 m-2">
+          <Link href="/faq" aria-current="page" className="text-foreground p-2 m-2">
             FAQ
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/about" className="text-inherit p-2 m-2">
+          <Link href="/about" className="text-foreground p-2 m-2">
             About Us
           </Link>
         </NavbarItem>
@@ -74,17 +74,17 @@ export default function Header() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} className="text-inherit" href="#" variant="flat">
+          <Button as={Link} className="text-foreground" href="#" variant="flat">
             Shop
           </Button>
         </NavbarItem>
           <NavbarMenuToggle className="sm:hidden" aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
       </NavbarContent>
 
-      <NavbarMenu className="dark flex justify-center items-center">
+      <NavbarMenu className="flex justify-center items-center">
           <NavbarMenuItem>
             <Link
-              className="w-full dark text-inherit text-3xl"
+              className="w-full text-foreground text-3xl"
               href="/blog"
               size="lg"
             >
@@ -94,7 +94,7 @@ export default function Header() {
 
           <NavbarMenuItem>
             <Link
-              className="w-full dark text-inherit  py-2 text-3xl"
+              className="w-full text-foreground  py-2 text-3xl"
               href="/faq"
               size="lg"
             >
@@ -104,7 +104,7 @@ export default function Header() {
 
           <NavbarMenuItem>
             <Link
-              className="w-full dark text-inherit  py-2 text-3xl"
+              className="w-full text-foreground  py-2 text-3xl"
               href="/about"
               size="lg"
             >
@@ -115,7 +115,7 @@ export default function Header() {
 
           <NavbarMenuItem>
             <Link
-              className="w-full dark text-inherit  py-2 text-3xl"
+              className="w-full text-foreground  py-2 text-3xl"
               href="#"
               size="sm"
             >

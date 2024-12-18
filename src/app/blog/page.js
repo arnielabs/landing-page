@@ -10,7 +10,7 @@ import {
 
 export default function App() {
   return (
-    <main className="dark flex flex-col items-center justify-center py-8 pb-24 max-w-screen-2xl mx-auto text-gray-200">
+    <main className="text-foreground bg-background flex flex-col items-center justify-center py-8 pb-20 p-2 max-w-screen-2xl mx-auto">
       <h2 className="text-6xl p-2 py-10 md:my-10 mb-5 text-left"> Discover </h2>
 
     <div className="gap-6 grid grid-cols-12 grid-rows-2 px-8">
