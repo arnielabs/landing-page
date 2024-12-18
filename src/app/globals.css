@@ -26,3 +26,9 @@ body {
     text-wrap: balance;
   }
 }
+
+.sf-model {
+  display: grid;
+  place-items: center;
+  cursor: grabbing;
+}

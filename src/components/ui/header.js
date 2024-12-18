@@ -30,7 +30,7 @@ export default function Header() {
     <Navbar
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
-      // className="bg-background"
+      // className="bg-default-50"
       isBlurred={true}
       position="sticky"
       maxWidth="xl"
@@ -74,7 +74,7 @@ export default function Header() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} className="text-foreground" href="#" variant="flat">
+          <Button as={Link} className="text-foreground bg-background" href="#" variant="bordered">
             Shop
           </Button>
         </NavbarItem>
