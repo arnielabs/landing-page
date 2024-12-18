@@ -32,11 +32,11 @@ export default function Home() {
           </div>
         </div> */}
       </div>
-      <div className="w-full relative md:h-[calc(100vh-6rem)] flex items-center justify-center text-center">
+      <div className="w-full relative lg:h-[calc(100vh-6rem)] flex items-center justify-center text-center">
         
         <div className="max-w-screen-2xl mx-auto gap-6 grid grid-cols-2 w-full h-full p-2 my-10">
           
-          <div className="col-span-2 md:col-span-1 flex flex-col items-center justify-center">
+          <div className="col-span-2 lg:col-span-1 flex flex-col items-center justify-center">
             <h5 className="text-5xl md:text-7xl font-normal text-foreground">
               <p className="text-base md:text-3xl text-foreground font-extralight">Introducing.</p>Soundframe
             </h5>
@@ -45,16 +45,10 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="sf-model col-span-2 md:col-span-1 h-full w-full">
+          <div className="sf-model col-span-2 lg:col-span-1 lg:h-full h-[calc(100vh-10rem)] w-full">
             <Canvas shadows camera={{ position: [-3, 0, 0], fov: 32 }}>
               <ambientLight intensity={1} />
-              {/* <spotLight
-                intensity={0.5}
-                angle={0.1}
-                penumbra={1}
-                position={[10, 15, 10]}
-                castShadow
-              /> */}
+
               <Suspense fallback={null}>
                 <Model />
                 <Environment preset="city" />
