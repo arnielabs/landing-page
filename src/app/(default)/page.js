@@ -5,7 +5,7 @@ import { Suspense } from "react";
 import { Environment, useGLTF, OrbitControls } from "@react-three/drei";
 
 const Model = () => {
-  const { scene } = useGLTF("/ipx-comp.glb", true);
+  const { scene } = useGLTF("/soundframe.glb", true);
   return (
     <>
       <primitive object={scene} scale={1} />
@@ -46,9 +46,9 @@ export default function Home() {
           </div>
           
           <div className="sf-model col-span-2 lg:col-span-1 lg:h-full h-[calc(100vh-10rem)] w-full">
-            <Canvas shadows camera={{ position: [-3, 0, 0], fov: 32 }}>
-              <ambientLight intensity={1} />
-
+            <Canvas shadows camera={{ position: [6, 0, 0], fov: 37 }}>
+              <ambientLight intensity={4} />
+              {/* <spotLight intensity={10} angle={0.1} penumbra={1} position={[25, 0, 0]} castShadow /> */}
               <Suspense fallback={null}>
                 <Model />
                 <Environment preset="city" />
